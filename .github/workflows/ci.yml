@@ -13,6 +13,10 @@ jobs:
         uses: actions/checkout@master
         with:
           ref: ${{ github.ref }}
+      - name: Run Tests
+        run: |
+          npm i
+          npm run test
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.5.1
