@@ -10,7 +10,7 @@
     "server:build": "tsc -p .",
     "build:watch": "npm run server:build:watch",
     "server:build:watch": "tsc -p . --watch",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "author": "",
   "license": "ISC",

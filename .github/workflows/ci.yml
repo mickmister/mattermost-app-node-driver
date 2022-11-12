@@ -16,4 +16,4 @@ jobs:
       - name: Run Tests
         run: |
           npm i
-          npm run test
+          npm run coverage
