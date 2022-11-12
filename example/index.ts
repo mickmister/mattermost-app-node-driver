@@ -1,5 +1,5 @@
 import {Client4} from '@mattermost/client';
-import {AppContext} from '@mattermost/types/lib/apps';
+import {AppContext} from 'types/apps';
 import {AppDependencies} from './app_dependencies';
 import {getExpressApp} from './express_app';
 import {PagerdutyClient} from './services/pager_duty';

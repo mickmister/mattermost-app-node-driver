@@ -1,4 +1,4 @@
-import {AppContext} from '@mattermost/types/lib/apps'
+import {AppContext} from 'types/apps'
 
 export type PagerdutyAlert = {
     message: string;

@@ -14,13 +14,15 @@
       "@mattermost/types/*": ["node_modules/@mattermost/types/lib/*"],
       "@mattermost/client/*": ["node_modules/@mattermost/client/lib/*"],
       "example/*": ["example/*"],
+      "types/*": ["types/*"],
     },
   },
   "include": [
     "example/**/*.ts",
     "example/**/*.js",
     "src/**/*.ts",
-    "src/**/*.js",
+    "src/**/*.ts",
+    "types/**/*.ts",
   ],
   "skipLibCheck": true,
 }

@@ -1,4 +1,4 @@
-import {AppCallRequest, AppCallResponse} from '@mattermost/types/lib/apps';
+import {AppCallRequest, AppCallResponse} from 'types/apps';
 import {UserProfile} from '@mattermost/types/lib/users';
 import {AppDependencies} from './app_dependencies';
 import {BaseHandler} from './myapps';

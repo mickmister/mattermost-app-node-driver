@@ -1,4 +1,4 @@
-import {AppCallRequest, AppCallResponse, AppManifest} from '@mattermost/types/lib/apps';
+import {AppCallRequest, AppCallResponse, AppManifest} from 'types/apps';
 import express from 'express';
 import {Bindable, BindingsRegistrar} from './apps_driver';
 

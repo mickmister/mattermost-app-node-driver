@@ -1,6 +1,6 @@
 import supertest from 'supertest';
 
-import {AppBinding, AppCallRequest, AppCallResponse, AppCallResponseType} from '@mattermost/types/lib/apps';
+import {AppBinding, AppCallRequest, AppCallResponse, AppCallResponseType} from 'types/apps';
 import {UserProfile} from '@mattermost/types/lib/users';
 import {AppDependencies} from 'example/app_dependencies';
 import {IsAdminContext, isNotAdminResponse} from '../helpers';

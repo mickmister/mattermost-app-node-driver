@@ -1,4 +1,4 @@
-import {AppCallResponse, AppContext} from '@mattermost/types/lib/apps';
+import {AppCallResponse, AppContext} from 'types/apps';
 import {UserProfile} from '@mattermost/types/lib/users';
 import * as apps from '../src/apps_driver';
 

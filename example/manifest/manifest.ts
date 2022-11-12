@@ -1,4 +1,4 @@
-import {AppManifest} from '@mattermost/types/apps';
+import {AppManifest} from 'types/apps';
 
 let manifest: AppManifest = {
     app_id: 'node-driver-example',

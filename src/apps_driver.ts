@@ -1,4 +1,4 @@
-import {AppBinding, AppCallRequest, AppCallResponse, AppContext, AppExpand} from '@mattermost/types/lib/apps';
+import {AppBinding, AppCallRequest, AppCallResponse, AppContext, AppExpand} from 'types/apps';
 
 export enum AppBindingLocation {
     POST_MENU = 'post_menu',

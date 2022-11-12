@@ -1,4 +1,4 @@
-import {AppBinding, AppCallRequest, AppCallResponse, AppContext, AppExpandLevel} from '@mattermost/types/lib/apps';
+import {AppBinding, AppCallRequest, AppCallResponse, AppContext, AppExpandLevel} from 'types/apps';
 
 import {ShouldShowBindings, CallHandler, BaseBindable, Bindable, BindingsRegistrar, GetLabel, BindingsExpand, BindingsContext, MakeBinding} from './myapps';
 import {isAdmin, isNotAdminResponse} from './helpers';

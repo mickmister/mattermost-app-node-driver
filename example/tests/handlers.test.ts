@@ -5,7 +5,7 @@ import {getExpressApp} from '../express_app';
 import {callRequestFromEndUser, callRequestFromSysadmin, checkSysadminHandler, checkError, testDependencies} from './test_utils';
 import {isNotAdminResponse} from '../helpers';
 import {IPagerdutyClient, PagerdutyAlert} from '../services/pager_duty';
-import {AppCallResponse, AppContext} from '@mattermost/types/lib/apps';
+import {AppCallResponse, AppContext} from 'types/apps';
 import {UserProfile} from '@mattermost/types/lib/users';
 
 class MockPagerDutyClient implements IPagerdutyClient {

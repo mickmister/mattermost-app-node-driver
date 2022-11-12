@@ -1,6 +1,6 @@
 import express from 'express';
 
-import {AppBinding, AppCallRequest, AppCallResponse, AppContext, AppExpandLevel} from '@mattermost/types/lib/apps';
+import {AppBinding, AppCallRequest, AppCallResponse, AppContext, AppExpandLevel} from 'types/apps';
 
 import {AppDependencies} from './app_dependencies';
 
