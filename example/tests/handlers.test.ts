@@ -25,7 +25,7 @@ describe('handlers', () => {
             app = getExpressApp(deps);
         });
 
-        const path = '/app/commands/configure/oauth';
+        const path = '/app/command/node-example/configure/oauth';
 
         it('should return an error if user is not sysadmin', () => {
             checkSysadminHandler(app, path);
@@ -51,7 +51,7 @@ describe('handlers', () => {
 
             const req = callRequestFromSysadmin;
 
-            await supertest(newApp).post('/app/commands/configure/oauth')
+            await supertest(newApp).post(path)
                 .send(req)
                 .expect(200)
                 .then((response) => {

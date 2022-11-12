@@ -4,16 +4,14 @@ import {ShouldShowBindings, CallHandler, BaseBindable, Bindable, BindingsRegistr
 import {isAdmin, isNotAdminResponse} from './helpers';
 import {handleConfigure, ConfigureOAuthContext, ConfigureOAuthExpand} from './handlers/configure';
 
-const command = BaseBindable.addBinding;
-
+@BaseBindable.makeBindable()
 export class TopCommand extends BaseBindable {
     location = 'node-example';
 }
 
-@command(TopCommand)
+@TopCommand.add()
 export class FunCommand extends BaseBindable {
     location = 'fun';
-    endpoint = '/commands/fun';
 
     handler: CallHandler = (req, deps) => ({
         type: 'ok',
@@ -21,17 +19,16 @@ export class FunCommand extends BaseBindable {
     });
 }
 
-@command(TopCommand)
+@TopCommand.add()
 export class ConfigureCommand extends BaseBindable {
     location = 'configure';
     shouldShow = isAdmin;
 }
 
-@command(ConfigureCommand)
+@ConfigureCommand.add()
 export class ConfigureOAuthCommand extends BaseBindable implements Bindable {
     location = 'oauth';
 
-    endpoint = '/commands/configure/oauth';
     expand = ConfigureOAuthExpand;
     handler: CallHandler<ConfigureOAuthContext> = handleConfigure;
 }
