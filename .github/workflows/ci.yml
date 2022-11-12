@@ -17,9 +17,3 @@ jobs:
         run: |
           npm i
           npm run test
-
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.5.1
-
-      - name: Run Jest
-        uses: stefanoeb/jest-action@1.0.4
